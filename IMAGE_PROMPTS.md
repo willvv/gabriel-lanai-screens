@@ -87,4 +87,10 @@ General instructions for every prompt:
 ### How to add these once generated
 1. Save each generated image using the exact filename shown in the heading above (e.g. `hero-lanai-repair.png`).
 2. Drop it into the `images/` folder in this project.
-3. Commit and push — Cloudflare Pages will redeploy automatically and the image will appear (no HTML/CSS changes required, since the `<img>` tags already point to these filenames).
+3. **For the 6 on-page photos** (everything except `og-cover.png`, which is only used by social-media link previews): also generate a `.webp` sibling with the same base name (e.g. `hero-lanai-repair.webp`) — the page uses `<picture>` with a WebP `<source>` and the PNG as fallback, since WebP is roughly 90% smaller for photos with no visible quality loss. Quickest way, if you have Python + Pillow installed:
+   ```python
+   from PIL import Image
+   Image.open("images/hero-lanai-repair.png").save("images/hero-lanai-repair.webp", format="WEBP", quality=82, method=6)
+   ```
+   Repeat per file, or loop over the six filenames. Keep the PNG in the repo too — it's the fallback for browsers that don't support WebP and the source of truth if you ever need to re-encode.
+4. Commit and push — Cloudflare Pages will redeploy automatically and the image will appear (no other HTML/CSS changes required, since the `<picture>`/`<img>` tags already point to these filenames).

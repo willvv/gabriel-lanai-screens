@@ -30,7 +30,8 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { overflow-x: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -59,6 +60,7 @@ h3 { font-size: 1.25rem; font-weight: 600; }
 p { margin: 0 0 1em; }
 a { color: var(--color-primary); }
 img { max-width: 100%; display: block; }
+picture { display: contents; }
 ul { padding-left: 1.2em; }
 
 .container {
