@@ -7,11 +7,11 @@ General instructions for every prompt:
 - Request **photorealistic, high-resolution, natural lighting** — avoid illustration/cartoon styles.
 - Avoid asking the AI to render legible text, logos, or license plates (AI text rendering is unreliable) — none of the prompts below request visible text.
 - Recommended aspect ratios are noted per image; crop after generation if the tool doesn't support exact ratios.
-- Export as JPG, sized around 1600px on the longest side for good quality without huge file sizes.
+- Export as PNG, sized around 1600px on the longest side for good quality without huge file sizes.
 
 ---
 
-## 1. Hero image — `images/hero-lanai-repair.jpg`
+## 1. Hero image — `images/hero-lanai-repair.png`
 **Placement:** Large image on the right side of the homepage hero section (first thing visitors see).
 **Aspect ratio:** 4:3 (landscape)
 
@@ -20,7 +20,7 @@ General instructions for every prompt:
 
 ---
 
-## 2. Gallery — Before photo #1 — `images/gallery-before-1.jpg`
+## 2. Gallery — Before photo #1 — `images/gallery-before-1.png`
 **Placement:** "Before" card in the Before/After gallery grid.
 **Aspect ratio:** 1:1 (square)
 
@@ -29,7 +29,7 @@ General instructions for every prompt:
 
 ---
 
-## 3. Gallery — After photo #1 — `images/gallery-after-1.jpg`
+## 3. Gallery — After photo #1 — `images/gallery-after-1.png`
 **Placement:** "After" card paired with the image above.
 **Aspect ratio:** 1:1 (square)
 
@@ -38,7 +38,7 @@ General instructions for every prompt:
 
 ---
 
-## 4. Gallery — Before photo #2 — `images/gallery-before-2.jpg`
+## 4. Gallery — Before photo #2 — `images/gallery-before-2.png`
 **Placement:** Second "Before" card in the gallery grid.
 **Aspect ratio:** 1:1 (square)
 
@@ -47,7 +47,7 @@ General instructions for every prompt:
 
 ---
 
-## 5. Gallery — After photo #2 — `images/gallery-after-2.jpg`
+## 5. Gallery — After photo #2 — `images/gallery-after-2.png`
 **Placement:** Second "After" card paired with the image above.
 **Aspect ratio:** 1:1 (square)
 
@@ -56,7 +56,7 @@ General instructions for every prompt:
 
 ---
 
-## 6. Service area visual — `images/service-area-map.jpg`
+## 6. Service area visual — `images/service-area-map.png`
 **Placement:** Right side of the "Service Areas" section, paired with a location pin icon fallback.
 **Aspect ratio:** 4:3 (landscape)
 
@@ -65,7 +65,7 @@ General instructions for every prompt:
 
 ---
 
-## 7. Social share cover image — `images/og-cover.jpg`
+## 7. Social share cover image — `images/og-cover.png`
 **Placement:** Used as the Open Graph preview image when the site link is shared on Facebook, WhatsApp, iMessage, etc.
 **Aspect ratio:** 1.91:1 (1200x630 recommended)
 
@@ -76,15 +76,15 @@ General instructions for every prompt:
 
 ## Optional extras (not required for launch, but nice upgrades later)
 
-### 8. Technician portrait — `images/technician-portrait.jpg`
+### 8. Technician portrait — `images/technician-portrait.png`
 > A photorealistic, friendly headshot-style photo of a Hispanic man in his 30s-40s wearing a plain navy polo shirt, standing outdoors in front of a screened pool lanai, arms crossed, warm genuine smile, natural daylight, shallow depth of field with the blurred lanai and pool behind him, shot like a small local business "about us" photo. No text or logos.
 
-### 9. Community-specific hero variant (Solterra) — `images/solterra-community.jpg`
+### 9. Community-specific hero variant (Solterra) — `images/solterra-community.png`
 > A photorealistic photo of a modern Central Florida resort-style community pool area with cabanas and screened lanai homes in the background, palm trees, clear blue sky, bright and inviting atmosphere typical of a Davenport, Florida vacation-home community like Solterra or Champions Gate. No visible signage, no text, no watermarks.
 
 ---
 
 ### How to add these once generated
-1. Save each generated image using the exact filename shown in the heading above (e.g. `hero-lanai-repair.jpg`).
+1. Save each generated image using the exact filename shown in the heading above (e.g. `hero-lanai-repair.png`).
 2. Drop it into the `images/` folder in this project.
 3. Commit and push — Cloudflare Pages will redeploy automatically and the image will appear (no HTML/CSS changes required, since the `<img>` tags already point to these filenames).
